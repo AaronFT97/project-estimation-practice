@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="contact_style.css">
+</head>
+<body>
+    <main>
+        <h1>Contact Me</h1>
+
+        <form id="contactForm" class="contact-form" action="/contact" method="post" novalidate>
+            <div>
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" required minlength="2" placeholder="Your name">
+            </div>
+
+            <div>
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" required placeholder="you@example.com">
+            </div>
+
+            <div>
+                <label for="subject">Subject</label>
+                <input id="subject" name="subject" type="text" required placeholder="Subject">
+            </div>
+
+            <div>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="6" required minlength="10" placeholder="Write your message..."></textarea>
+            </div>
+
+            <div>
+                <button type="submit">Send Message</button>
+            </div>
+
+            <div id="formMessage" role="status" aria-live="polite"></div>
+        </form>
+    </main>
+</body>
+</html>
